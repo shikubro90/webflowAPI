@@ -1,0 +1,157 @@
+{
+  "_id": "63c061f5482ce190c19b57bc",
+  "lastUpdated": "2023-01-12T19:39:34.071Z",
+  "createdOn": "2023-01-12T19:39:33.992Z",
+  "name": "Blog Posts",
+  "slug": "post",
+  "singularName": "Blog Post",
+  "fields": [
+    {
+      "name": "Post Body",
+      "slug": "post-body",
+      "type": "RichText",
+      "required": false,
+      "editable": true,
+      "helpText": "",
+      "id": "6fac559a363be5acb870b4930f2f3a84"
+    },
+    {
+      "name": "Post Summary",
+      "slug": "post-summary",
+      "type": "PlainText",
+      "required": false,
+      "editable": true,
+      "helpText": "A summary of the blog post that appears on blog post grid",
+      "id": "a43e4ca5827405b97b09a0940e379364",
+      "validations": { "singleLine": false }
+    },
+    {
+      "name": "Main Image",
+      "slug": "main-image",
+      "type": "ImageRef",
+      "required": false,
+      "editable": true,
+      "helpText": "",
+      "id": "2f22f487b2355fea2f636c0c88b714ae"
+    },
+    {
+      "name": "Thumbnail image",
+      "slug": "thumbnail-image",
+      "type": "ImageRef",
+      "required": false,
+      "editable": true,
+      "helpText": "Smaller version of main image that is used on blog post grid",
+      "id": "ef2e5ddde503541ddf445978855b383c"
+    },
+    {
+      "name": "Featured?",
+      "slug": "featured",
+      "type": "Bool",
+      "required": false,
+      "editable": true,
+      "helpText": "",
+      "id": "f5a768e7062bf182f44dcadf6a37b5b3"
+    },
+    {
+      "name": "Color",
+      "slug": "color",
+      "type": "Color",
+      "required": false,
+      "editable": true,
+      "helpText": "",
+      "id": "9b246046a8d93a7aa7d549e58111d0e1"
+    },
+    {
+      "name": "Name",
+      "slug": "name",
+      "type": "PlainText",
+      "required": true,
+      "editable": true,
+      "id": "0a0625a2ad92f4704657dd7bd90c09e1",
+      "validations": { "maxLength": 256 }
+    },
+    {
+      "name": "Slug",
+      "slug": "slug",
+      "type": "PlainText",
+      "required": true,
+      "editable": true,
+      "unique": true,
+      "id": "fb65d1da8335c4bed5e8f73c7efd9de5",
+      "validations": {
+        "maxLength": 256,
+        "pattern": {},
+        "messages": {
+          "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+          "maxLength": "Must be less than 256 characters"
+        }
+      }
+    },
+    {
+      "name": "Archived",
+      "slug": "_archived",
+      "type": "Bool",
+      "required": true,
+      "editable": true,
+      "id": "db091513a7d20400725889d9e7c5aa96",
+      "default": false
+    },
+    {
+      "name": "Draft",
+      "slug": "_draft",
+      "type": "Bool",
+      "required": true,
+      "editable": true,
+      "id": "4a6ea7e4c39f5ab51980fe6a6aae9b38",
+      "default": false
+    },
+    {
+      "name": "Created On",
+      "slug": "created-on",
+      "type": "Date",
+      "required": false,
+      "editable": false,
+      "id": "db1d6f0e4acff13686476f3f1d200be5"
+    },
+    {
+      "name": "Updated On",
+      "slug": "updated-on",
+      "type": "Date",
+      "required": false,
+      "editable": false,
+      "id": "2f6370e3446c291622050b1c9455c1de"
+    },
+    {
+      "name": "Published On",
+      "slug": "published-on",
+      "type": "Date",
+      "required": false,
+      "editable": false,
+      "id": "6014d1aeffacf591f4228976628dcf4e"
+    },
+    {
+      "name": "Created By",
+      "slug": "created-by",
+      "type": "User",
+      "required": false,
+      "editable": false,
+      "id": "f8e60dbc13dd026cfe57f11cb207483b"
+    },
+    {
+      "name": "Updated By",
+      "slug": "updated-by",
+      "type": "User",
+      "required": false,
+      "editable": false,
+      "id": "a4a469332ba37a9ef2582dde9cee5129"
+    },
+    {
+      "name": "Published By",
+      "slug": "published-by",
+      "type": "User",
+      "required": false,
+      "editable": false,
+      "id": "9eae8848384cedc2de6dbe531a1cfc47"
+    }
+  ]
+}
